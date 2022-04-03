@@ -25,7 +25,6 @@
     font-weight: bolder;
 }
 
-
 .navTop{
     padding-top: 15px;
 }
@@ -79,7 +78,8 @@ h1{
 
 .panel{
     margin-top: 40px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
     align-items: center;
     justify-content: center;
     background-color: white;
@@ -103,14 +103,14 @@ h1{
     margin-top: 15px;
 }
 
-.table-description{
-    margin: 10px; 
-    width: 30%;  
-    text-align: justify;
+.panel-row h2 {
+    color: var(--safra-pink);
+    font-weight: 300;
 }
 
-.table-content{
-    width: 60%;  
+.table-description{
+    margin: 10px; 
+    text-align: justify;
 }
 
 .btnRedirect{

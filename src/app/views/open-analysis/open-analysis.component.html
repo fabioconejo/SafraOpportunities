@@ -25,10 +25,10 @@
                 <label>Banco exportador das informações:</label>
                 <input id="bank-name" type="text" class="form-control" [value]="infoOriginBank" disabled/>
                 
-                <input type="checkbox" [value]="terms" id="terms">
+                <input type="checkbox" [value]="terms" (change)="acceptTerms()" id="terms">
                 <label class="terms">&nbsp; Aceito compartilhar minhas informações com o Banco Safra</label><br>
                 
-                <button class="ofertas" (click)="goToOpenReport()">Ver Ofertas</button>
+                <button class="ofertas" [disabled]="!(terms && auth)" (click)="goToOpenReport()">Ver Ofertas</button>
             </form>
         </div>
     </div>

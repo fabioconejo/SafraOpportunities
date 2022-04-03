@@ -9,6 +9,7 @@ import { OpenReportComponent } from './views/open-report/open-report.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SafraHeaderComponent } from './partials/safra-header/safra-header.component';
 import { SafraFooterComponent } from './partials/safra-footer/safra-footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SafraFooterComponent } from './partials/safra-footer/safra-footer.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

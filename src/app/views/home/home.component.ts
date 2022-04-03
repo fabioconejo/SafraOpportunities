@@ -1,3 +1,4 @@
+import { AppService } from './../../app.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,9 +9,12 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private service: AppService) {}
 
   ngOnInit(): void {
+    this.service.fetchOpenAPI().subscribe(data => {
+      console.log(data);
+    });
   }
 
   goToOpenAnalysis() {

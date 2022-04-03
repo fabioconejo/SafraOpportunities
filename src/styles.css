@@ -14,6 +14,7 @@
     --safra-white: #FFFFFF;
     --safra-lightgray: #EEEEEE;
     --safra-gray: #7A7A7A;
+    --safra-pink: #9d1047;
 
     --primary-ft-color: var(--safra-darkblue);
     --secondary-ft-color: var(--safra-purple);
@@ -22,7 +23,7 @@
 
     --primary-bg-color: var(--safra-white);
     --secondary-bg-color: var(--safra-lightgray);
-    --tertiary-ft-color: var(--safra-lightblue);
+    --tertiary-bg-color: var(--safra-lightblue);
     --quaternary-bg-color: var(--safra-gold);
 }
 

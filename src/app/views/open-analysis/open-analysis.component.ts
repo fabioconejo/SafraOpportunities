@@ -17,6 +17,7 @@ export class OpenAnalysisComponent implements OnInit {
   infoName = '';
   infoCPF = '';
   infoOriginBank = '';
+  auth = false;
   terms = false;
 
   constructor(private router: Router) { }
@@ -28,6 +29,12 @@ export class OpenAnalysisComponent implements OnInit {
     this.infoName = this.client.name;
     this.infoCPF = this.client.CPF;
     this.infoOriginBank = this.client.originBank;
+    this.auth = true;
+  }
+
+  acceptTerms() {
+    this.terms = !this.terms;
+    console.log(this.terms);
   }
 
   goToOpenReport() {
