@@ -61,13 +61,25 @@
     cursor: pointer;
     transition-timing-function: ease;
     transition-duration: .3s;
+    width: 90%;
+    height: 90%;
+}
+.img-bank{
+    border-radius: 10px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-bank:hover{
+    
+    /* border: 1px solid var(--primary-ft-color); */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .bank:hover {
     filter: grayscale(0%);
-    /* border: 1px solid var(--primary-ft-color); */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
+} 
 
 #bancoz {
     background-image: url("../../../assets/logoBancoZ.png");
@@ -124,6 +136,7 @@
     float: right;
     transition-timing-function: ease;
     transition-duration: .3s;
+    cursor: pointer;
 }
 
 .ofertas:hover {

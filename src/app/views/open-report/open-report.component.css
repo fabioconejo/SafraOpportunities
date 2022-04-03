@@ -1,5 +1,4 @@
 .content{
-    height: 800px;
     width: 100%;
     background-color: var(--secondary-bg-color);
     
@@ -83,4 +82,25 @@ td{
     .s-container {
         max-width: 1180px;
     }
+}
+
+.ofertas {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: var(--primary-ft-color);
+    color: var(--primary-bg-color);
+    transition-timing-function: ease;
+    transition-duration: .3s; 
+    cursor: pointer;
+    text-decoration: none;
+}
+.ofertas:hover {
+    background-color: var(--quaternary-bg-color);
+    color: var(--primary-ft-color);
+}
+
+.btn-ofertas{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }

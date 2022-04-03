@@ -67,13 +67,14 @@
 }
 
 #page-title{
-    background-image: url("../../../assets/landscape.jpg");
-    background-position: 80% 10%;
+    background-position: top ;
+    background-image: url("../../../assets/daniel-chen-cNaEqXSsZ0k-unsplash.jpg");
+    background-size: cover;
 }
 
 h1{
     font-size: 53px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .panel{
