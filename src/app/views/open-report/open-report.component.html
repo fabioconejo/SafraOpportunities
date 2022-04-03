@@ -23,20 +23,10 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td class="column-safra">Mark</td>
-                        <td>Otto</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td class="column-safra">Jacob</td>
-                        <td>Thornton</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td class="column-safra">Larry</td>
-                        <td>the Bird</td>
+                      <tr *ngFor="let tabelaProdutos of tabelaProdutos">
+                        <td>{{tabelaProdutos.nome}}</td>
+                        <td class="column-safra">{{tabelaProdutos.valorSafra}}</td>
+                        <td>{{tabelaProdutos.valorZ}}</td>
                       </tr>
                     </tbody>
                 </table>
