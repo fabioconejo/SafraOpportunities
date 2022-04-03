@@ -67,9 +67,11 @@
 }
 
 #page-title{
-    background-position: top ;
     background-image: url("../../../assets/daniel-chen-cNaEqXSsZ0k-unsplash.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: contrast(80%);
 }
 
 h1{
