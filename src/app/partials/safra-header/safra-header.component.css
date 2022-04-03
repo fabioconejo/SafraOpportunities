@@ -107,6 +107,10 @@ header {
         height: 56px;
     }
 
+    .bottombar {
+        height: 70px;
+    }
+
     .s-container {
         max-width: 1018px;
     }

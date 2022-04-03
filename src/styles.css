@@ -23,6 +23,7 @@
     --primary-bg-color: var(--safra-white);
     --secondary-bg-color: var(--safra-lightgray);
     --tertiary-ft-color: var(--safra-lightblue);
+    --quaternary-bg-color: var(--safra-gold);
 }
 
 * {

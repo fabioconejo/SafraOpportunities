@@ -63,6 +63,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    margin-top: 95px;
 }
 
 #page-title{
@@ -91,7 +93,7 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     border-radius: 10px;
-    box-shadow: 0 0 0.5em #D4AD68;
+    box-shadow: 0 5x 10px rgba(0, 0, 0, 0.1);
     height: 100%;
     font-size: 16px;
     
@@ -123,28 +125,17 @@ h2{
     text-align: left;
 }
 
-
+@media (min-width: 576px) {
+}
 
 @media (min-width: 768px) {
-    .container-menu{
-        width: 750px;
-    }
 }
 
 @media (min-width: 992px) {
-    .container-menu{
-        width: 970px;
+    .page-title {
+        margin-top: 126px;
     }
 }
 
 @media (min-width: 1200px) {
-    .container-menu{
-        width: 1170px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container-menu{
-        width: 1370px;
-    }
 }

@@ -1,92 +1,51 @@
-<body >
-    <div class="container-navbar ">
-        <div class="container-menu">
-            <ul class="nav navTop">
-                <li class="nav-item navTop-item">
-                    <a class="nav-link" href="#">Para você</a>
-                </li>
-                <li id="navTop-itemSelected" class="nav-item navTop-item" >
-                    <a class="nav-link" href="#">Para sua empresa</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="container-menu">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white col-sm-12 " >
-            <div class="container-fluid principalMenu">
-                <img class="logoSafra" src="../assets/logoBanco.png" alt="Logo Banco Safra">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item nav-item-menu">
-                            <a class="nav-link" href="#">Serviços</a>
-                        </li>
-                        <li class="nav-item nav-item-menu">
-                            <a class="nav-link" href="#">Investimentos</a>
-                        </li>
-                        <li class="nav-item nav-item-menu">
-                            <a class="nav-link" href="#">Nossas Especialidades</a>
-                        </li>
-                        <li class="nav-item nav-item-menu">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item nav-item-menu">
-                            <a class="nav-link" href="#">Ajuda</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+<safra-header></safra-header>
 
-    <div id="page-title" class="page-title">
-        <h1>Safra Opportunity</h1>
-    </div>
 
-    <div class="panel">
-        <div class="table-description panel-row">
-            <h2>
-                Aproveite o Safra
-            </h2>
-            <p>
-                Complementando as vantagens ao lado nós oferecemos também um comparativo personalizado. <br>
-                Habilite seu <a href="https://www.safra.com.br/central-de-conteudo/aprender/tudo-sobre-open-banking-e-suas-vantagens.htm">Open Banking</a> para nós e veja as vantagens que o Banco Safra pode te ofercer!
-            </p>
-            <button class="btnRedirect"> Veja aqui! </button>
-        </div>
-        <div class="content table-content panel-row">
-            <table class="table principal-table">
-                <thead>
-                  <tr>
+<div id="page-title" class="page-title">
+    <h1>Safra Opportunity</h1>
+</div>
+
+<div class="panel">
+    <div class="table-description panel-row">
+        <h2>
+            Aproveite o Safra
+        </h2>
+        <p>
+            Complementando as vantagens ao lado nós oferecemos também um comparativo personalizado. <br>
+            Habilite seu <a
+                href="https://www.safra.com.br/central-de-conteudo/aprender/tudo-sobre-open-banking-e-suas-vantagens.htm">Open
+                Banking</a> para nós e veja as vantagens que o Banco Safra pode te ofercer!
+        </p>
+        <button class="btnRedirect" (click)="goToOpenAnalysis()"> Veja aqui! </button>
+    </div>
+    <div class="content table-content panel-row">
+        <table class="table principal-table">
+            <thead>
+                <tr>
                     <th scope="col">Produtos e Serviços</th>
                     <th scope="col">Banco Safra</th>
                     <th scope="col">Outros bancos</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <th scope="row">3</th>
                     <td>Larry</td>
                     <td>the Bird</td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
+                </tr>
+            </tbody>
+        </table>
     </div>
-</body>
+</div>
 
-
+<safra-footer></safra-footer>

@@ -39,7 +39,6 @@
 .text-choose {
     margin-top: 5%;
     margin-left: 5%;
-    
 }
 
 .list-choose {
@@ -52,18 +51,22 @@
 }
 
 .bank {
-    border: 1px solid var(--secondary-bg-color);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
+    /*border: 1px solid var(--secondary-bg-color);*/
     border-radius: 2px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     filter: grayscale(80%);
     cursor: pointer;
+    transition-timing-function: ease;
+    transition-duration: .3s;
 }
 
 .bank:hover {
     filter: grayscale(0%);
-    border: 1px solid var(--primary-ft-color);
+    /* border: 1px solid var(--primary-ft-color); */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 #bancoz {
@@ -98,6 +101,10 @@
     background-image: url("../../../assets/logoCaixa.png");
 }
 
+.terms {
+    font-size: .6rem;
+}
+
 .form-basic-infos {
     width: 90%;
     margin-top: 5%;
@@ -109,8 +116,19 @@
 }
 
 .ofertas {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
     background-color: var(--primary-ft-color);
     color: var(--primary-bg-color);
+    float: right;
+    transition-timing-function: ease;
+    transition-duration: .3s;
+}
+
+.ofertas:hover {
+    background-color: var(--quaternary-bg-color);
+    color: var(--primary-ft-color);
 }
 
 @media (min-width: 576px) {
@@ -144,6 +162,10 @@
     }
 
     .sub-title {
+        font-size: 1rem;
+    }
+
+    .terms {
         font-size: 1rem;
     }
 

@@ -6,29 +6,29 @@
             <div class="sub-title">Conecte via Open Banking com o seu banco atual</div>
             <div class="text-choose">Escolha o seu banco atual:</div>
             <div class="list-choose">
-                <div class="bank" id="bancoz"></div>
-                <div class="bank" id="itau"></div>
-                <div class="bank" id="santander"></div>
-                <div class="bank" id="bb"></div>
-                <div class="bank" id="bradesco"></div>
-                <div class="bank" id="votorantim"></div>
-                <div class="bank" id="btg"></div>
-                <div class="bank" id="caixa"></div>
+                <div role="img" alt="bancoz" class="bank" id="bancoz" (click)="fillInfos()"></div>
+                <div role="img" alt="itau" class="bank" id="itau"></div>
+                <div role="img" alt="santander" class="bank" id="santander"></div>
+                <div role="img" alt="bb" class="bank" id="bb"></div>
+                <div role="img" alt="bradesco" class="bank" id="bradesco"></div>
+                <div role="img" alt="votorantim" class="bank" id="votorantim"></div>
+                <div role="img" alt="btg" class="bank" id="btg"></div>
+                <div role="img" alt="caixa" class="bank" id="caixa"></div>
             </div>
             <form class="form-basic-infos">
                 <label>Nome completo:</label>
-                <input id="client-name" type="text" class="form-control" disabled/>
+                <input id="client-name" type="text" class="form-control" [value]="infoName" disabled/>
                 
                 <label>CPF:</label>
-                <input id="client-cpf" type="text" class="form-control" disabled/>
+                <input id="client-cpf" type="text" class="form-control" [value]="infoCPF" disabled/>
                 
                 <label>Banco exportador das informações:</label>
-                <input id="bank-name" type="text" class="form-control" disabled/>
+                <input id="bank-name" type="text" class="form-control" [value]="infoOriginBank" disabled/>
                 
-                <input type="checkbox" id="termos">
-                <label>&nbsp; Aceito compartilhar minhas informações com o Banco Safra</label><br>
+                <input type="checkbox" [value]="terms" id="terms">
+                <label class="terms">&nbsp; Aceito compartilhar minhas informações com o Banco Safra</label><br>
                 
-                <button class="ofertas">Ver Ofertas</button>
+                <button class="ofertas" (click)="goToOpenReport()">Ver Ofertas</button>
             </form>
         </div>
     </div>

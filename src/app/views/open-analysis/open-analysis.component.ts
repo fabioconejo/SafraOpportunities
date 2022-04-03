@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'open-analysis',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpenAnalysisComponent implements OnInit {
 
-  constructor() { }
+  client = {
+    name: 'Rogério Santos Oliveira',
+    CPF: '456.209.143-01',
+    originBank: 'Banco Z'
+  }
+
+  infoName = '';
+  infoCPF = '';
+  infoOriginBank = '';
+  terms = false;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  fillInfos() {
+    this.infoName = this.client.name;
+    this.infoCPF = this.client.CPF;
+    this.infoOriginBank = this.client.originBank;
+  }
+
+  goToOpenReport() {
+    this.router.navigate(['/relatorio']);
   }
 
 }
