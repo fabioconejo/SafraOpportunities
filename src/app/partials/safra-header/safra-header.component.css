@@ -1,0 +1,125 @@
+header {
+    width: 100%;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-bg-color);
+}
+
+.s-container {
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.topbar {
+    padding-right: 1%;
+    padding-left: 1%;
+
+    background-color: var(--secondary-bg-color);
+
+    box-shadow: none;
+    position: relative;
+    z-index: 10;   
+}
+
+.link-topbar {
+    width: auto;
+    height: auto;
+    padding-right: .5%;
+    padding-left: .5%;
+    margin-right: .5%;
+    margin-left: .5%;
+
+    color: var(--quaternary-ft-color);
+    cursor: pointer;
+}
+
+.link-topbar:hover {
+    font-weight: bold;
+    color: var(--primary-ft-color);
+    border-bottom: 5px solid var(--primary-ft-color);
+}
+
+.link-topbar.selected {
+    font-weight: bold;
+    color: var(--primary-ft-color);
+    border-bottom: 5px solid var(--primary-ft-color);
+}
+
+.bottombar {
+    background-color: var(--primary-bg-color);
+
+    position: relative;
+    z-index: 9;
+}
+
+.logo-safra {
+    width: auto;
+    max-height: none;
+    height: 44px;
+    display: block;
+    padding: 0;
+}
+
+@media (min-width: 0px) /*(min-width: 576px)*/ {
+    header {
+        height: 95px;
+    }
+
+    .topbar {
+        height: 33px;
+    }
+
+    .bottombar {
+        height: 62px;
+    }
+
+    .s-container {
+        max-width: 525px;
+    }
+
+    .logo-safra {
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .s-container {
+        max-width: 646px;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        height: 126px;
+    }
+
+    .topbar {
+        height: 56px;
+    }
+
+    .s-container {
+        max-width: 1018px;
+    }
+
+    .logo-safra {
+        margin: initial;
+    }
+}
+
+@media (min-width: 1200px) {
+    .s-container {
+        max-width: 1180px;
+    }
+}
+
+

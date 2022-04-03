@@ -1,0 +1,29 @@
+footer {
+    height: 300px;
+    background-color: var(--secondary-ft-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-safra {
+    width: auto;
+}
+
+@media (min-width: 0px) /*(min-width: 576px)*/ {
+    .logo-safra {
+        height: 15%;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .logo-safra {
+        height: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,164 @@
+.box {
+    width: 100%;
+    height: 1500px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-container {
+    height: 75%;
+    width: 100%;
+}
+
+.main-box {
+    background-color: var(--primary-bg-color);
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    color: var(--secondary-ft-color);
+    display: flex;
+    justify-content: center;
+}
+
+.sub-title {
+    font-size: 0.7rem;
+    font-family: var(--primary-font);
+    color: var(--quaternary-ft-color);
+    display: flex;
+    justify-content: center;
+}
+
+.text-choose {
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
+
+.list-choose {
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2px;
+}
+
+.bank {
+    border: 1px solid var(--secondary-bg-color);
+    border-radius: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+.bank:hover {
+    filter: grayscale(0%);
+    border: 1px solid var(--primary-ft-color);
+}
+
+#bancoz {
+    background-image: url("../../../assets/logoBancoZ.png");
+}
+
+#itau {
+    background-image: url("../../../assets/logoItau.png");
+}
+
+#santander {
+    background-image: url("../../../assets/logoSantander.png");
+}
+
+#bb {
+    background-image: url("../../../assets/logoBB.png");
+}
+
+#bradesco {
+    background-image: url("../../../assets/logoBradesco.png");
+}
+
+#votorantim {
+    background-image: url("../../../assets/logoBV.png");
+}
+
+#btg {
+    background-image: url("../../../assets/logoBTG.png");
+}
+
+#caixa {
+    background-image: url("../../../assets/logoCaixa.png");
+}
+
+.form-basic-infos {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.form-basic-infos input {
+    margin-bottom: 5%;
+}
+
+.ofertas {
+    background-color: var(--primary-ft-color);
+    color: var(--primary-bg-color);
+}
+
+@media (min-width: 576px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .sub-title {
+        font-size: 0.9rem;
+    }
+
+    .s-container {
+        max-width: 525px;
+    }
+}
+
+@media (min-width: 768px) {
+    .s-container {
+        max-width: 646px;
+    }
+
+    .list-choose {
+        height: 20%;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    .s-container {
+        max-width: 1018px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .s-container {
+        max-width: 1180px;
+    }
+
+    .list-choose {
+        height: 10%;
+        grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    }
+}
